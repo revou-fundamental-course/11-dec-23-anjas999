@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School in revou</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <a>MessageUs</a>
+        <a>Course</a>
+        <a>Portofolio</a>
+        <a>Home</a>
+      </div>
+    
+    <header>
+        <h1>Hi <span id="name"></span>, Welcome to my miniweb</h1>
+        <h4>Ini Project miniweb pertama saya </h4>
+        <div class="slide">
+            <img class="img-slideshow" src="assets/images1.jpeg">
+            <img class="img-slideshow" src="assets/images2.jpeg">
+            <img class="img-slideshow" src="assets/images3.jpeg">
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button>
+        </div>
+        
+        <hr>
+    
+     <h1>Fasilitas Course</h1>
+     <div class="fasilitas">
+        
+        <div>
+            <div class="circle" style="background-image: url('assets/images2.jpeg');"></div>
+            <h4>Digital Marketing</h4>
+        </div>
+        <div>
+            <div class="circle" style="background-image: url('assets/images1.jpeg');"></div>
+            <h4>Data Analisis</h4>
+        </div>
+        <div>
+            <div class="circle" style="background-image: url('assets/images3.jpeg');"></div>
+            <h4>Software Engineering</h4>
+        </div>
+     </div>
+    </header>
+    <hr>
+    
+    <div id="form-isi">
+     <h1>MessageUs</h1>
+    <form id="myForm" onsubmit="validateForm(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap">
+        <span id="errorNama" class="error"></span><br><br>
+    
+        <label for="tglLahir">Tanggal Lahir:</label>
+        <input type="date" id="tglLahir" name="tglLahir">
+        <span id="errorTglLahir" class="error"></span><br><br>
+    
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="laki" name="jenisKelamin" value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+        <span id="errorJenisKelamin" class="error"></span><br><br>
+    
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan"></textarea>
+        <span id="errorPesan" class="error"></span><br><br>
+    
+        <input type="submit" value="Submit">
+      </form>
+     </div>  
+
+      <div id="result">
+        <h3>Record :</h3>
+        <p id="resultNama">Nama</p>
+        <p id="resultTglLahir">Tanggal Lahir</p>
+        <p id="resultJenisKelamin">Jenis Kelamin</p>
+        <p id="resultPesan">Pesan</p>
+      </div>
+    
+<footer>
+    <p>&copy; 2023 Project miniweb</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
